@@ -11,20 +11,17 @@ const Layout = () => {
   useEffect(() => {
     if (isSearching) {
       // console.log(isSearching)
-      setMovie(null)
+      setMovie(null);
     }
-  
-  }, [isSearching])
-  
-  
+  }, [isSearching]);
 
   const onClickHadel = (epId) => {
     // console.log(epId)
     const data = searchResult.find((movie) => movie.episode_id === epId);
     // console.log(String(isSearching))
-      setMovie({ ...data });
-   
-    // console.log(movie) 
+    setMovie({ ...data });
+
+    // console.log(movie)
   };
 
   return (
@@ -34,7 +31,7 @@ const Layout = () => {
           <div className="">
             {searchResult.map((episode) => (
               <MovieContainer
-                key={episode.episode_id}
+                key={episode.episode_id }
                 epId={episode.episode_id}
                 release_date={episode.release_date}
                 title={episode.title}

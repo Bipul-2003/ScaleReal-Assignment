@@ -29,6 +29,8 @@ const movieSlice = createSlice({
             state.movies = state.searchResult?.sort((a, b) => b.release_date.split("-")[0] - a.release_date.split("-")[0])
         },
         searchMovie: (state, action) => {
+            console.log("printed");
+            
             state.searchQuery = action.payload
             state.searchResult = state.movies.filter((movie) => movie['title'].toLowerCase().includes(state.searchQuery))
             state.isSearching = state.isSearching ? false : true
