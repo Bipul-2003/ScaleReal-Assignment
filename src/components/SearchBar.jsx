@@ -12,7 +12,7 @@ const SearchBar = ({ }) => {
         // Used setTimeout inorder to reduce the requests to the store
         setTimeout(() => {
             dispatch(searchMovie(e.target.value.toLowerCase()))
-        }, 1000);
+        }, 800);
     }
     // console.log(serchString)
     return (

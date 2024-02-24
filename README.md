@@ -3,6 +3,7 @@
 For this assignment, I created a web app for listing Star Wars movies. The data fetched from the following endpoint: https://swapi.dev/api/films/?format=json.
 
 ## Live Preview
+
 Here is the live preview link: https://bipulswain-scalereal-assignment.vercel.app/
 
 ## Description
